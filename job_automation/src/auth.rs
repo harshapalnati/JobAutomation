@@ -12,7 +12,7 @@ pub fn load_cred()->Result<(String,String),Box<dyn Error>>
 
     let username = env::var("user")?;
     let password=env::var("password")?;
-    log_action(&format!("Raw username from .env: {}", password)); // Log full username
+    log_action(&format!("Raw username from .env: {}", username)); // Log full username
   
     Ok((username,password))
 }
