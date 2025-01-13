@@ -1,0 +1,9 @@
+[package]
+name = "job_automation"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+browser_automation ="0.1"
+dotenv = "0.15"
+tokio = { version = "1", features = ["full"] }      # For async programming
